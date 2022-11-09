@@ -1,0 +1,95 @@
+
+
+*{
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+  --first-color: #008B74;
+  --text-color:#637B84;
+  --tittle-color: #344A53;
+  --body-color: white;
+  --container-color:#667190;
+  --border-color:#3CA494;
+  --backgound-color: rgb(98, 157, 182);
+  --shadow-color: gray;
+}
+body{
+  background-color: #637B84 ;
+  background-image: url(./assets/images/hacker-man-laptop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  opacity: 1;
+  
+}
+
+/*------------------- 360px----------------------*/
+
+
+
+@media (max-width: 300px){
+
+ /*-----------------HEADER-----------------*/
+
+  .Header{
+    display: flex;
+    flex-direction: row-reverse;
+   height: 50px;
+   position: fixed;
+   width: 100%;
+   box-shadow: 0 0 20px gray;
+   opacity: 2;
+  background-color: rgba(255, 255, 255, 0.429);
+   
+  }
+  .scroll-bar{
+    background-color: white;
+    box-shadow: 0 0 20px var(--shadow-color);
+    color: white;
+  }
+  .menu-toggle{
+    background-color: transparent;
+    border: none;
+   margin-right: 2rem;
+   margin-top: 6px;
+   color: var(--body-color);
+   font-size: 2rem;
+  }
+  .menu{
+    position: fixed;
+    left: 0%;
+    list-style: none;
+   top: 7.5%;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: column;
+   transition: .5s;
+  list-style: none;
+  background-color: rgba(65, 91, 133, 0.616);
+  color:rgb(249, 249, 249);
+  font-size: 1.1rem;
+  border: 1px solid black;
+  }
+.hidden{
+  left:100%;
+}
+.fa-solid{
+  color: rgba(181, 127, 107, 0.851);
+}
+.fa-bars{
+  color: rgb(61, 57, 57);
+}
+.menu-list{
+ margin-bottom: 6rem;
+}
+ 
+}
